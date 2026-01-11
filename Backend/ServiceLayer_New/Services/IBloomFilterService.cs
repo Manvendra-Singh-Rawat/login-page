@@ -2,7 +2,7 @@
 {
     public interface IBloomFilterService
     {
-        void GetHash(string asdf);
+        List<UInt64> GetHash(string username, long quantity, Double percentFP, int bitsRequired, int hashFuncRequired);
         byte[] MurmurHash128(byte[] receivedString);
         byte[] XxHash128(byte[] receivedString);
     }

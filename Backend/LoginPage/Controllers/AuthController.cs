@@ -1,5 +1,7 @@
 ﻿using LoginPage.Entity;
+using LoginPage.Features.Querys;
 using LoginPage.Models;
+using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using ServiceLayer_New.Services;
@@ -10,8 +12,8 @@ namespace LoginPage.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        BloomFilterService newBloomFilterService = new BloomFilterService();
-        AbuseWorkChecker abuseWorkChecker = new AbuseWorkChecker();
+        public ISender _sender;
+        public AuthController (ISender sender) => _sender = sender;
 
         [HttpPost("register")]
         public ActionResult<User> Register(UserDto userDto)
@@ -22,24 +24,17 @@ namespace LoginPage.Controllers
             return user;
         }
 
-        [HttpPost("checkAvailability")]
-        public ActionResult<string> CheckAvailability(UsernameDto usernameDto)
+        [HttpPost("checkAvailability:{newUsername}")]
+        public async Task<ActionResult<string>> CheckAvailability(string newUsername)
         {
-            // Abuse word checker
-            // check if the a list of string is not in the username
-            if(abuseWorkChecker.CheckAbuse(usernameDto.username))
-            {
-                return BadRequest("bad username");
-            }
-
-            newBloomFilterService.GetHash(usernameDto.username);
+            await _sender.Send(new CheckUsernameQuery(newUsername));
             return Ok("Username is available");
         }
 
-        [HttpGet("CheckServiceWorking")]
+        [HttpGet("checkservices")]
         public ActionResult<string> CheckService()
         {
-            return Ok(true);
+            return Ok("Working hehe");
         }
     }
 }
