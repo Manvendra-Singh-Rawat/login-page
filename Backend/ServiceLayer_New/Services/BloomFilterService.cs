@@ -13,16 +13,18 @@ namespace ServiceLayer_New.Services
         // Percentage of false positive
         public Double p;
         // Number of bits required
-        public int m;
+        public long m;
         // Number of hash functions required
         public int k;
 
-        public List<UInt64> GetHash(string username, long quantity, double percentFP, int bitsRequired, int hashFuncRequired)
+        public List<UInt64> GetHash(string username, long quantity, double percentFP, long bitsRequired, int hashFuncRequired)
         {
             n = quantity;
             p = percentFP;
             m = bitsRequired;
             k = hashFuncRequired;
+            Console.WriteLine(n);
+            Console.WriteLine(k);
 
             byte[] byteString = System.Text.ASCIIEncoding.UTF8.GetBytes(username);
 

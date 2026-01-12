@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "E:\\Projects\\login-page\\Backend\\LoginPage\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|e:\\projects\\login-page\\backend\\loginpage\\entity\\bloomfilterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|solutionrelative:entity\\bloomfilterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|e:\\projects\\login-page\\backend\\loginpage\\features\\querys\\checkusernamequeryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|solutionrelative:features\\querys\\checkusernamequeryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -16,6 +12,10 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{688C4DE6-F10F-469E-A9D3-DC74FB64663A}|..\\ServiceLayer_New\\ServiceLayer_New.csproj|e:\\projects\\login-page\\backend\\servicelayer_new\\services\\bloomfilterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|e:\\projects\\login-page\\backend\\loginpage\\entity\\bloomfilterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|solutionrelative:entity\\bloomfilterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{688C4DE6-F10F-469E-A9D3-DC74FB64663A}|..\\ServiceLayer_New\\ServiceLayer_New.csproj|e:\\projects\\login-page\\backend\\servicelayer_new\\services\\ibloomfilterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -28,21 +28,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1322,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IBloomFilterService.cs",
-              "DocumentMoniker": "E:\\Projects\\login-page\\Backend\\ServiceLayer_New\\Services\\IBloomFilterService.cs",
-              "RelativeDocumentMoniker": "..\\ServiceLayer_New\\Services\\IBloomFilterService.cs",
-              "ToolTip": "E:\\Projects\\login-page\\Backend\\ServiceLayer_New\\Services\\IBloomFilterService.cs",
-              "RelativeToolTip": "..\\ServiceLayer_New\\Services\\IBloomFilterService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-11T13:20:50.553Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -57,52 +44,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "IBloomFilterService.cs",
+              "DocumentMoniker": "E:\\Projects\\login-page\\Backend\\ServiceLayer_New\\Services\\IBloomFilterService.cs",
+              "RelativeDocumentMoniker": "..\\ServiceLayer_New\\Services\\IBloomFilterService.cs",
+              "ToolTip": "E:\\Projects\\login-page\\Backend\\ServiceLayer_New\\Services\\IBloomFilterService.cs",
+              "RelativeToolTip": "..\\ServiceLayer_New\\Services\\IBloomFilterService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T13:20:50.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "BloomFilterData.cs",
               "DocumentMoniker": "E:\\Projects\\login-page\\Backend\\LoginPage\\Entity\\BloomFilterData.cs",
               "RelativeDocumentMoniker": "Entity\\BloomFilterData.cs",
               "ToolTip": "E:\\Projects\\login-page\\Backend\\LoginPage\\Entity\\BloomFilterData.cs",
               "RelativeToolTip": "Entity\\BloomFilterData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-02T09:27:14.359Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "BloomFilterService.cs",
               "DocumentMoniker": "E:\\Projects\\login-page\\Backend\\ServiceLayer_New\\Services\\BloomFilterService.cs",
               "RelativeDocumentMoniker": "..\\ServiceLayer_New\\Services\\BloomFilterService.cs",
               "ToolTip": "E:\\Projects\\login-page\\Backend\\ServiceLayer_New\\Services\\BloomFilterService.cs",
               "RelativeToolTip": "..\\ServiceLayer_New\\Services\\BloomFilterService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwAUAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-02T08:56:28.025Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AuthController.cs",
               "DocumentMoniker": "E:\\Projects\\login-page\\Backend\\LoginPage\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
               "ToolTip": "E:\\Projects\\login-page\\Backend\\LoginPage\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowBwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-02T05:18:47.478Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CheckUsernameQueryHandler.cs",
               "DocumentMoniker": "E:\\Projects\\login-page\\Backend\\LoginPage\\Features\\Querys\\CheckUsernameQueryHandler.cs",
               "RelativeDocumentMoniker": "Features\\Querys\\CheckUsernameQueryHandler.cs",
               "ToolTip": "E:\\Projects\\login-page\\Backend\\LoginPage\\Features\\Querys\\CheckUsernameQueryHandler.cs",
               "RelativeToolTip": "Features\\Querys\\CheckUsernameQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwCQAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-02T05:16:44.358Z",
               "EditorCaption": ""

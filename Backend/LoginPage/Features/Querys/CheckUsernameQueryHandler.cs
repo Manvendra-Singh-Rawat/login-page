@@ -17,7 +17,7 @@ namespace LoginPage.Features.Querys
             {
                 Console.WriteLine("is abusive damn");
                 return true;
-            }            
+            }
 
             List<UInt64> hashedList = bloomFilterService.GetHash(
                 request.Username, 
@@ -26,7 +26,29 @@ namespace LoginPage.Features.Querys
                 BloomFilterData.m, 
                 BloomFilterData.k);
 
+            foreach(UInt64 hashedHash in hashedList)
+            {
+                Console.WriteLine(hashedHash);
+            }
+
+            bool flag = true;
+            foreach (UInt64 hashedHash in hashedList)
+            {
+                if (BloomFilterData.bloomFilterArrayNew[(int)hashedHash] == false)
+                {
+                    flag = false;
+                    break;
+                }
+            }
+
+            if(flag)
+            {
+                // returning false to show that the given username is in the DB(including false positive) so you can't use it.
+                return false;
+            }
+
             // Async DB call
+            // previous filter did its job not its time for DB to actually check if the username is in db or not
 
             return true;
         }
