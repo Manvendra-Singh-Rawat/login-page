@@ -5,8 +5,6 @@ VisualStudioVersion = 17.14.36623.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginPage", "LoginPage.csproj", "{81A93590-555E-4A33-98D7-1B6B6FD35017}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLayer_New", "..\ServiceLayer_New\ServiceLayer_New.csproj", "{688C4DE6-F10F-469E-A9D3-DC74FB64663A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{81A93590-555E-4A33-98D7-1B6B6FD35017}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81A93590-555E-4A33-98D7-1B6B6FD35017}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81A93590-555E-4A33-98D7-1B6B6FD35017}.Release|Any CPU.Build.0 = Release|Any CPU
-		{688C4DE6-F10F-469E-A9D3-DC74FB64663A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{688C4DE6-F10F-469E-A9D3-DC74FB64663A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{688C4DE6-F10F-469E-A9D3-DC74FB64663A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{688C4DE6-F10F-469E-A9D3-DC74FB64663A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

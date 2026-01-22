@@ -1,10 +1,8 @@
 ﻿using LoginPage.Entity;
+using LoginPage.Features.Command;
 using LoginPage.Features.Querys;
-using LoginPage.Models;
 using MediatR;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using ServiceLayer_New.Services;
 
 namespace LoginPage.Controllers
 {
@@ -16,25 +14,23 @@ namespace LoginPage.Controllers
         public AuthController (ISender sender) => _sender = sender;
 
         [HttpPost("register")]
-        public ActionResult<User> Register(UserDto userDto)
+        public async Task<ActionResult<User>> RegisterAsync(AddUsernameCommand command)
         {
-            User user = new User();
-            var passwordHash = new PasswordHasher<User>().HashPassword(user, userDto.password);
-
-            return user;
+            var update = await _sender.Send(command);
+            return null;
         }
 
         [HttpPost("checkAvailability:{newUsername}")]
         public async Task<ActionResult<string>> CheckAvailability(string newUsername)
         {
-            await _sender.Send(new CheckUsernameQuery(newUsername));
-            return Ok("Username is available");
-        }
-
-        [HttpGet("checkservices")]
-        public ActionResult<string> CheckService()
-        {
-            return Ok("Working hehe");
+            bool isAvailable = await _sender.Send(new CheckUsernameQuery(newUsername));
+            
+            return Ok(new
+                {
+                    isAvailable,
+                    message = isAvailable ? "Username is available" : "Username is not available"
+                }
+            );
         }
     }
 }

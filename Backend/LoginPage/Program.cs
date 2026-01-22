@@ -1,4 +1,9 @@
+using LoginPage.Application.Interfaces;
+using LoginPage.Infrastructure.AbuseChecker;
+using LoginPage.Infrastructure.BloomFilter;
+using LoginPage.Infrastructure.Persistence;
 using Scalar.AspNetCore;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +15,12 @@ builder.Services.AddOpenApi();
 
 builder.Services.AddMediatR(configuration =>
     configuration.RegisterServicesFromAssembly(typeof(Program).Assembly));
+
+builder.Services.AddSingleton<IBloomFilterService, InMemoryBloomFilter>();
+builder.Services.AddSingleton<IAbuseCheckerService, AbuseWorkChecker>();
+
+builder.Services.AddDbContext<PostgresDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DBConnectionString")));
 
 var app = builder.Build();
 
