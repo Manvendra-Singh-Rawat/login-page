@@ -19,10 +19,36 @@ namespace LoginPage.Infrastructure.BloomFilter
             UInt64 n = config.GetValue<UInt64>("BloomFilterData:ExpectedItems");
             double p = config.GetValue<double>("BloomFilterData:FalsePositiveRate");
 
+            if (n == 0)
+                throw new Exception("ExpectedItems cannot be zero");
+
+            if (p <= 0 || p >= 1)
+                throw new Exception("FalsePositiveRate must be between 0 and 1");
+
             _size = (int)Math.Ceiling(-(n * Math.Log(p)) / Math.Pow(Math.Log(2), 2));
             _hashCount = (int)Math.Round((_size / (double)n) * Math.Log(2));
 
             InMemoryBitArray = new BitArray(_size);
+
+            PopulateBloomFilter(config);
+        }
+
+        private void PopulateBloomFilter(IConfiguration config = null)
+        {
+            string filePath = config.GetValue<string>("FilePath");
+
+            bool isEsists = File.Exists(filePath);
+            if (!isEsists)
+            {
+                Console.WriteLine("File path is empty!");
+                return;
+            }
+            else
+            {
+                string content = File.ReadAllText(filePath);
+                Console.WriteLine("File content:");
+                Console.WriteLine(content);
+            }
         }
 
         public void Add(string username)

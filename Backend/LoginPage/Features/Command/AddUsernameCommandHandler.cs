@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LoginPage.Features.Command
 {
-    public class AddUsernameCommandHandler : IRequestHandler<AddUsernameCommand, bool>
+    public class AddUsernameCommandHandler : IRequestHandler<AddUsernameCommand, User>
     {
         private readonly IAbuseCheckerService abuseCheckerService;
         private readonly IBloomFilterService bloomFilterService;
@@ -24,18 +24,18 @@ namespace LoginPage.Features.Command
             _postgresDbContext = dbContext;
         }
 
-        public async Task<bool> Handle(AddUsernameCommand request, CancellationToken cancellationToken)
+        public async Task<User> Handle(AddUsernameCommand request, CancellationToken cancellationToken)
         {
             bool isAbusive = abuseCheckerService.Check(request.Username);
             
-            if (isAbusive) return false;
+            if (isAbusive) return null;
 
             bool mightContain = bloomFilterService.MightContain(request.Username);
 
             if (mightContain)
             {
                 Console.WriteLine("username already taken! (bloom filter)");
-                return false;
+                return null;
             }
 
             // DB check
@@ -44,7 +44,7 @@ namespace LoginPage.Features.Command
             if(existsInDb)
             {
                 Console.WriteLine("Username already taken!");
-                return false;
+                return null;
             }
             else
             {
@@ -62,7 +62,9 @@ namespace LoginPage.Features.Command
             }, cancellationToken);
 
             await _postgresDbContext.SaveChangesAsync();
-            return true;
+            // here null is just placeholder
+            // will switch to a user class for return to fix this
+            return null;
         }
     }
 }
