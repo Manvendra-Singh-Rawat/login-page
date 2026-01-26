@@ -7,24 +7,32 @@
       "RelativeMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|solutionrelative:infrastructure\\bloomfilter\\inmemorybloomfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|e:\\projects\\login-page\\backend\\loginpage\\filehandling\\bloomfilterindexes.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|solutionrelative:filehandling\\bloomfilterindexes.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|e:\\projects\\login-page\\backend\\loginpage\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|e:\\projects\\login-page\\backend\\loginpage\\features\\command\\addusernamecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|solutionrelative:features\\command\\addusernamecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|e:\\projects\\login-page\\backend\\loginpage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|e:\\projects\\login-page\\backend\\loginpage\\features\\command\\addusernamecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|solutionrelative:features\\command\\addusernamecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|e:\\projects\\login-page\\backend\\loginpage\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|e:\\projects\\login-page\\backend\\loginpage\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|e:\\projects\\login-page\\backend\\loginpage\\features\\query\\checkusernamequeryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|solutionrelative:features\\query\\checkusernamequeryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|e:\\projects\\login-page\\backend\\loginpage\\application\\interfaces\\ibloomfilterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|solutionrelative:application\\interfaces\\ibloomfilterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|e:\\projects\\login-page\\backend\\loginpage\\infrastructure\\fileservice\\bloomfilterindexes.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|solutionrelative:infrastructure\\fileservice\\bloomfilterindexes.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|e:\\projects\\login-page\\backend\\loginpage\\application\\interfaces\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81A93590-555E-4A33-98D7-1B6B6FD35017}|LoginPage.csproj|solutionrelative:application\\interfaces\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1322,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,80 +58,106 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CheckUsernameQueryHandler.cs",
+              "DocumentMoniker": "E:\\Projects\\login-page\\Backend\\LoginPage\\Features\\Query\\CheckUsernameQueryHandler.cs",
+              "RelativeDocumentMoniker": "Features\\Query\\CheckUsernameQueryHandler.cs",
+              "ToolTip": "E:\\Projects\\login-page\\Backend\\LoginPage\\Features\\Query\\CheckUsernameQueryHandler.cs",
+              "RelativeToolTip": "Features\\Query\\CheckUsernameQueryHandler.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAwCIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T12:14:10.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IBloomFilterService.cs",
+              "DocumentMoniker": "E:\\Projects\\login-page\\Backend\\LoginPage\\Application\\Interfaces\\IBloomFilterService.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\IBloomFilterService.cs",
+              "ToolTip": "E:\\Projects\\login-page\\Backend\\LoginPage\\Application\\Interfaces\\IBloomFilterService.cs",
+              "RelativeToolTip": "Application\\Interfaces\\IBloomFilterService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T12:08:46.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BloomFilterIndexes.txt",
+              "DocumentMoniker": "E:\\Projects\\login-page\\Backend\\LoginPage\\Infrastructure\\FileService\\BloomFilterIndexes.txt",
+              "RelativeDocumentMoniker": "Infrastructure\\FileService\\BloomFilterIndexes.txt",
+              "ToolTip": "E:\\Projects\\login-page\\Backend\\LoginPage\\Infrastructure\\FileService\\BloomFilterIndexes.txt",
+              "RelativeToolTip": "Infrastructure\\FileService\\BloomFilterIndexes.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-26T12:03:09.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IFileService.cs",
+              "DocumentMoniker": "E:\\Projects\\login-page\\Backend\\LoginPage\\Application\\Interfaces\\IFileService.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\IFileService.cs",
+              "ToolTip": "E:\\Projects\\login-page\\Backend\\LoginPage\\Application\\Interfaces\\IFileService.cs",
+              "RelativeToolTip": "Application\\Interfaces\\IFileService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T10:30:22.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "InMemoryBloomFilter.cs",
               "DocumentMoniker": "E:\\Projects\\login-page\\Backend\\LoginPage\\Infrastructure\\BloomFilter\\InMemoryBloomFilter.cs",
               "RelativeDocumentMoniker": "Infrastructure\\BloomFilter\\InMemoryBloomFilter.cs",
               "ToolTip": "E:\\Projects\\login-page\\Backend\\LoginPage\\Infrastructure\\BloomFilter\\InMemoryBloomFilter.cs",
               "RelativeToolTip": "Infrastructure\\BloomFilter\\InMemoryBloomFilter.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCgAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwDcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-25T06:45:57.609Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\Projects\\login-page\\Backend\\LoginPage\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "E:\\Projects\\login-page\\Backend\\LoginPage\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAABwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-01-25T06:24:32.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BloomFilterIndexes.txt",
-              "DocumentMoniker": "E:\\Projects\\login-page\\Backend\\LoginPage\\FileHandling\\BloomFilterIndexes.txt",
-              "RelativeDocumentMoniker": "FileHandling\\BloomFilterIndexes.txt",
-              "ToolTip": "E:\\Projects\\login-page\\Backend\\LoginPage\\FileHandling\\BloomFilterIndexes.txt",
-              "RelativeToolTip": "FileHandling\\BloomFilterIndexes.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-01-25T06:24:15.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Projects\\login-page\\Backend\\LoginPage\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\Projects\\login-page\\Backend\\LoginPage\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-24T12:21:39.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "AddUsernameCommandHandler.cs",
               "DocumentMoniker": "E:\\Projects\\login-page\\Backend\\LoginPage\\Features\\Command\\AddUsernameCommandHandler.cs",
               "RelativeDocumentMoniker": "Features\\Command\\AddUsernameCommandHandler.cs",
               "ToolTip": "E:\\Projects\\login-page\\Backend\\LoginPage\\Features\\Command\\AddUsernameCommandHandler.cs",
               "RelativeToolTip": "Features\\Command\\AddUsernameCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwF8AAACRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-24T12:18:09.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "E:\\Projects\\login-page\\Backend\\LoginPage\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "E:\\Projects\\login-page\\Backend\\LoginPage\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-19T10:36:11.876Z",
               "EditorCaption": ""
             }
           ]

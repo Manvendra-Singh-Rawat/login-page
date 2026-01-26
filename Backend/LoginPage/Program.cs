@@ -4,6 +4,7 @@ using LoginPage.Infrastructure.BloomFilter;
 using LoginPage.Infrastructure.Persistence;
 using Scalar.AspNetCore;
 using Microsoft.EntityFrameworkCore;
+using LoginPage.Infrastructure.FileService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +22,8 @@ builder.Services.AddSingleton<IAbuseCheckerService, AbuseWorkChecker>();
 
 builder.Services.AddDbContext<PostgresDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DBConnectionString")));
+
+builder.Services.AddScoped<IFileService, FileService>();
 
 var app = builder.Build();
 

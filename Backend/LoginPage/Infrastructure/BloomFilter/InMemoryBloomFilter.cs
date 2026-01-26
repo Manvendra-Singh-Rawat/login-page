@@ -35,7 +35,8 @@ namespace LoginPage.Infrastructure.BloomFilter
 
         private void PopulateBloomFilter(IConfiguration config = null)
         {
-            string filePath = config.GetValue<string>("FilePath");
+            string? filePath = config.GetValue<string>("FilePath");
+            if (filePath == null) return;
 
             bool isEsists = File.Exists(filePath);
             if (!isEsists)
@@ -46,6 +47,16 @@ namespace LoginPage.Infrastructure.BloomFilter
             else
             {
                 string content = File.ReadAllText(filePath);
+
+                var newString = content.Split(' ');
+                Console.WriteLine("Count: " + newString.Count());
+                foreach (string line in newString)
+                {
+                    Console.WriteLine($"{line}");
+                    if (line == "") continue;
+                    InMemoryBitArray[int.Parse(line)] = true;
+                }
+
                 Console.WriteLine("File content:");
                 Console.WriteLine(content);
             }
@@ -62,7 +73,7 @@ namespace LoginPage.Infrastructure.BloomFilter
             }
         }
 
-        public bool MightContain(string username)
+        public bool MightContain(string username, out List<int> hashList)
         {
             GetULongHash(username, out ulong murmurHashULong, out ulong xxHashULong);
             List<int> combinedHashList = GetCombinedHash(murmurHashULong, xxHashULong);
@@ -75,6 +86,9 @@ namespace LoginPage.Infrastructure.BloomFilter
                     flag = false; break;
                 }
             }
+
+            hashList = combinedHashList;
+
             return flag;
         }
 

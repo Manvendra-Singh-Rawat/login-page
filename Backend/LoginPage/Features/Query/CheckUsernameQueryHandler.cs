@@ -32,7 +32,7 @@ namespace LoginPage.Features.Querys
                 Console.WriteLine("Username not abusive");
             }
 
-                bool mightContain = _bloomFilterService.MightContain(request.Username);
+            bool mightContain = _bloomFilterService.MightContain(request.Username, out List<int> _);
 
             if(mightContain)
             {
