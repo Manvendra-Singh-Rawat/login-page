@@ -1,6 +1,6 @@
 ﻿using LoginPage.Application.Interfaces;
-using System.Collections;
 using Murmur;
+using System.Collections;
 using System.IO.Hashing;
 
 namespace LoginPage.Infrastructure.BloomFilter
@@ -14,8 +14,12 @@ namespace LoginPage.Infrastructure.BloomFilter
         private readonly Murmur128 _murmur128 = MurmurHash.Create128();
         private readonly XxHash128 _xxHash128 = new XxHash128();
 
+        private readonly IConfiguration _configuration;
+
         public InMemoryBloomFilter(IConfiguration config)
         {
+            _configuration = config;
+
             UInt64 n = config.GetValue<UInt64>("BloomFilterData:ExpectedItems");
             double p = config.GetValue<double>("BloomFilterData:FalsePositiveRate");
 
@@ -30,16 +34,16 @@ namespace LoginPage.Infrastructure.BloomFilter
 
             InMemoryBitArray = new BitArray(_size);
 
-            PopulateBloomFilter(config);
+            PopulateBloomFilter();
         }
 
-        private void PopulateBloomFilter(IConfiguration config = null)
+        private void PopulateBloomFilter()
         {
-            string? filePath = config.GetValue<string>("FilePath");
-            if (filePath == null) return;
+            if (_configuration == null) return;
 
-            bool isEsists = File.Exists(filePath);
-            if (!isEsists)
+            string? filePath = _configuration.GetValue<string>("FilePath");
+
+            if (!File.Exists(filePath))
             {
                 Console.WriteLine("File path is empty!");
                 return;
@@ -48,17 +52,14 @@ namespace LoginPage.Infrastructure.BloomFilter
             {
                 string content = File.ReadAllText(filePath);
 
-                var newString = content.Split(' ');
-                Console.WriteLine("Count: " + newString.Count());
+                string[] newString = content.Split(' ');
                 foreach (string line in newString)
                 {
-                    Console.WriteLine($"{line}");
                     if (line == "") continue;
                     InMemoryBitArray[int.Parse(line)] = true;
                 }
 
-                Console.WriteLine("File content:");
-                Console.WriteLine(content);
+                Console.WriteLine("Bloom filter all set.");
             }
         }
 

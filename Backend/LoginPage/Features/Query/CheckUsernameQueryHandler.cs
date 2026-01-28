@@ -40,8 +40,6 @@ namespace LoginPage.Features.Querys
                 return false;
             }
 
-            // Async DB call
-            // previous filter did its job not its time for DB to actually check if the username is in db or not
             bool existsInDb = await _postgresDbContext.Users.AnyAsync(x => x.Username == request.Username, cancellationToken);
 
             if (existsInDb)
